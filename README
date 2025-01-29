@@ -20,7 +20,7 @@ README.md: Instruções para execução.
 
 python3 main.py
 
-Executando o código, é necessário informar primeiro o nome do arquivo da instância e logo após o nome do arquivo que será salvo para o melhor tour encontrado pela execução do algoritmo.
+Executando o código, é necessário informar primeiro o nome do arquivo da instância e logo após o nome do arquivo que será salvo o melhor tour encontrado pela execução do algoritmo.
 
 Ex: 
 
