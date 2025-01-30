@@ -7,7 +7,7 @@ def euclidean_distance(x1, y1, x2, y2):
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2) # Calcula a distância entre dois pontos no plano cartesiano usando a fórmula de Pitágoras
 
 
-# Leitura dos dados da instância a partir de um arquivo
+# Leitura dos dados da instância a partir de um arquivo O(n)
 def read_instance(file_path):
     nodes = [] # Lista para armazenar os vértices(cidades) e suas coordenadas
     with open(file_path, "r") as file:
@@ -28,7 +28,7 @@ def read_instance(file_path):
     return nodes # Retorna a lista de cidades
 
 
-# Criar matriz de distâncias
+# Criar matriz de distâncias O(n^2)
 def create_distance_matrix(nodes):
     dimension = len(nodes) # Número de cidades
     distance_matrix = [[0] * dimension for _ in range(dimension)] # Cria uma matriz bidimensional inicializada com zeros
@@ -43,7 +43,7 @@ def create_distance_matrix(nodes):
     return distance_matrix # Retorna a matriz de distâncias
 
 
-# Heurística do vizinho mais próximo com fator alpha
+# Heurística do vizinho mais próximo com fator alpha O(n^2)
 def nearest_neighbor(distance_matrix):
     n = len(distance_matrix) # Número de cidades
     unvisited = set(range(1, n)) # Conjunto de cidades ainda não visitadas (exclui a cidade inicial, 0)
